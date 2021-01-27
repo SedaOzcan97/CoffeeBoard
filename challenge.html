@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="challenge.css">
+        <title>DREAM COFFEE</title>
+    </head>
+    <body>
+        <header>
+            <section>
+                <div class="cup">
+                    <img class="mySlides" src="images/coffee.jpg">
+                
+                <div class="container2">
+                   <h1 class="text1">
+                    DREAMS COFFEE<h2></h2></h1>
+                </div>
+                <section>
+                       <div class="banner">
+                           <div class="blocks"></div>
+                       </div>
+                
+                  </section>
+                  <script>
+                     const banner=document.getElementsByClassName('banner')[0];
+                     const blocks=document.getElementsByClassName('blocks');
+         
+                    for(var i = 1; i < 400; i++){
+                      banner.innerHTML +="<div class='blocks'></div>"
+                      blocks [i].style.animationDelay = `${i * 0.01}s`;}
+                  </script>
+         
+                     </div> 
+                  <div class="cup">
+                <img class="mySlides" src="images/espresso.jpg">
+                <div class="container">
+                    <span class="top">CHOOSE YOUR SIDE</span>
+                    <span class="bottom">A HARD ESPRESSO?</span>
+                </div>
+                      
+                </div>   
+                <div class="cup">
+                <img class="mySlides" src="images/latte.jpg">
+                <div class="container">
+                    <span class="top">CHOOSE YOUR SIDE</span>
+                    <span class="bottom">A SOFT LATTE?</span>
+                </div>
+                      
+                </div>   
+                <div class="cup">
+                    <img class="mySlides" src="images/tatlı.jpg">
+                    <div class="container">
+                        <span class="top">COFFEE + DESSERT</span>
+                        <span class="bottom">$15</span>
+                    </div>
+                          
+                    </div> 
+                      
+            </section>
+        </header>
+        <div class="slider">
+        </div>
+                <script src="challenge.js"></script>
+        </body>
+</html>
